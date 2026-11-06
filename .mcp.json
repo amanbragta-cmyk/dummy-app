@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "one-engine": {
+      "command": "${HOME}/one-engine/bin/engine",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+name: security-audit
+version: 'c1c8a8c'
+description: Mandatory in every project. Cloudflare's security review, used as it ships. Guidance
+  mode by default -- before you commit a change that touches a trust boundary (sign-in,
+  permissions, user input, uploads, secrets, payments, another customer's data, a model's prompt
+  or tools), check it against the relevant hunting file, then `engine security reviewed`. The full
+  six-phase audit only when the owner asks for an audit or before a release they name.
+tags:
+- security
+- review
+- audit
+load_class: bootstrap
+always_on: true
+author: Cloudflare (MIT), github.com/cloudflare/security-audit-skill at c1c8a8c

@@ -1,0 +1,41 @@
+name: coding-standards
+version: '1.0'
+description: How code is written here, whoever writes it. Load it before you write or change
+  code. Simplest solution, reuse what exists, small functions, named constants, short comments,
+  the tool's own errors, no personal paths, a test for every change in behaviour, a version bump
+  for a changed contract. A project's own rules add to these; they never loosen them.
+tags:
+- code
+- quality
+- review
+load_class: conditional
+always_on: false
+kind: code file
+before: writing code
+# named in a task's briefing, but no card at each chat's first code edit: CLAUDE.md and
+# the one-engine skill already say to load it before code, and nearly every chat edits code
+offer: briefing
+files:
+- '*.py'
+- '*.js'
+- '*.mjs'
+- '*.cjs'
+- '*.ts'
+- '*.jsx'
+- '*.tsx'
+- '*.vue'
+- '*.svelte'
+- '*.go'
+- '*.rs'
+- '*.rb'
+- '*.php'
+- '*.java'
+- '*.kt'
+- '*.swift'
+- '*.c'
+- '*.h'
+- '*.cpp'
+- '*.cs'
+- '*.sh'
+- '*.sql'
+author: anthill

@@ -1,0 +1,11 @@
+name: skill-creator
+version: '2.0'
+description: Spotted something worth reusing? Propose it to the owner as a skill first;
+  on a yes, write it with `engine skill new`. Covers when to propose, project vs shipped,
+  the files, and the index.
+tags:
+- skills
+- authoring
+load_class: conditional
+always_on: false
+author: anthill

@@ -1,0 +1,12 @@
+name: one-engine
+version: '1.0'
+description: How to work inside a product run by the One Engine -- read and write the shared
+  knowledge through one door, plan before building, claim and close plan tasks, ask instead of
+  working around a plan that does not hold, and the checks before a commit.
+tags:
+- knowledge
+- plan
+- workflow
+load_class: bootstrap
+always_on: true
+author: one-engine

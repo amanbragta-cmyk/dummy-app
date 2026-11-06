@@ -1,0 +1,83 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/one-engine/bin/engine\" hook session-start # one-engine",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/one-engine/bin/engine\" hook prompt # one-engine",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/one-engine/bin/engine\" hook pre-tool # one-engine",
+            "timeout": 15
+          }
+        ],
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit|Bash"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/one-engine/bin/engine\" hook post-tool # one-engine",
+            "timeout": 15
+          }
+        ],
+        "matcher": "Read|Edit|Write|MultiEdit|NotebookEdit|Skill"
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/one-engine/bin/engine\" hook pre-compact # one-engine",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/one-engine/bin/engine\" hook stop # one-engine",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/one-engine/bin/engine\" hook subagent-stop # one-engine",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

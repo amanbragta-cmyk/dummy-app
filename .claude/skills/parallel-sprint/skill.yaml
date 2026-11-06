@@ -1,0 +1,11 @@
+name: parallel-sprint
+version: '1.0'
+description: The owner said "build this plan" and it holds tasks that can run at the same time.
+  You are the lead -- find what is ready, start one helper per task, check what each brings
+  back, batch the owner's questions. Load it before starting any helper.
+tags:
+- plan
+- parallel
+load_class: conditional
+always_on: false
+author: anthill

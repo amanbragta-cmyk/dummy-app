@@ -1,0 +1,37 @@
+name: frontend-design
+version: '1.0'
+description: Distinctive, intentional visual design for any screen -- a direction grounded
+  in the subject, deliberate type and colour, restraint, a self-critique pass. The engine
+  hands it over before the first edit of a screen file.
+tags:
+- ui
+- design
+- frontend
+load_class: conditional
+always_on: false
+author: Anthropic (Apache-2.0), claude-plugins-official plugins/frontend-design; see NOTICE
+kind: screen
+before: writing UI
+look_and_feel: true
+companion: stunning-ui
+files:
+- '*.html'
+- '*.htm'
+- '*.css'
+- '*.scss'
+- '*.jsx'
+- '*.tsx'
+- '*.vue'
+- '*.svelte'
+- '*.blade.php'
+- components/
+- pages/
+- views/
+- screens/
+- ui/
+- public/
+- templates/
+card:
+- Load it now, before your first screen edit; a screen task does not close until a reviewer who loaded it has passed it.
+- A reviewer will judge your screenshots (`engine journey prove <T>`, at 390, 820 and 1280 wide) against the look above.
+- Ground the design in the subject and that look; one memorable element, no templated defaults, no sideways scroll at 390, visible focus.
