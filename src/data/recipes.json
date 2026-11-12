@@ -1,0 +1,69 @@
+[
+  {
+    "id": "chickpea-spinach-curry",
+    "title": "Chickpea and spinach curry",
+    "summary": "A mild, creamy curry from the store cupboard, ready in half an hour.",
+    "image": "images/chickpea-spinach-curry.jpg",
+    "tags": ["vegetarian", "under 30 min"],
+    "minutes": 30,
+    "servings": 4,
+    "ingredients": [
+      { "name": "chickpeas, drained", "quantity": 800, "unit": "g" },
+      { "name": "coconut milk", "quantity": 400, "unit": "ml" },
+      { "name": "baby spinach", "quantity": 200, "unit": "g" },
+      { "name": "onion", "quantity": 1, "unit": "" },
+      { "name": "garlic cloves", "quantity": 2, "unit": "" },
+      { "name": "curry powder", "quantity": 2, "unit": "tbsp" },
+      { "name": "salt", "quantity": null, "unit": "" }
+    ],
+    "steps": [
+      "Chop the onion and garlic and soften them in a little oil for 5 minutes.",
+      "Stir in the curry powder and cook for 1 minute.",
+      "Add the chickpeas and coconut milk and simmer for 15 minutes.",
+      "Stir in the spinach until it wilts, then season with salt."
+    ]
+  },
+  {
+    "id": "lemon-garlic-chicken",
+    "title": "Lemon and garlic roast chicken",
+    "summary": "Chicken thighs roasted on a tray with lemon, garlic and potatoes.",
+    "image": "images/lemon-garlic-chicken.jpg",
+    "tags": ["one tray"],
+    "minutes": 50,
+    "servings": 4,
+    "ingredients": [
+      { "name": "chicken thighs", "quantity": 8, "unit": "" },
+      { "name": "new potatoes", "quantity": 750, "unit": "g" },
+      { "name": "lemon", "quantity": 1, "unit": "" },
+      { "name": "garlic cloves", "quantity": 6, "unit": "" },
+      { "name": "olive oil", "quantity": 2, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Heat the oven to 200°C.",
+      "Halve the potatoes and toss them on a tray with the oil, garlic and sliced lemon.",
+      "Lay the chicken on top, skin up, and season.",
+      "Roast for 45 minutes until the skin is crisp and the potatoes are tender."
+    ]
+  },
+  {
+    "id": "tomato-basil-pasta",
+    "title": "Tomato and basil pasta",
+    "summary": "Fresh tomatoes cooked down into a quick sauce with plenty of basil.",
+    "image": "images/tomato-basil-pasta.jpg",
+    "tags": ["vegetarian", "under 30 min"],
+    "minutes": 20,
+    "servings": 2,
+    "ingredients": [
+      { "name": "spaghetti", "quantity": 200, "unit": "g" },
+      { "name": "cherry tomatoes", "quantity": 300, "unit": "g" },
+      { "name": "garlic cloves", "quantity": 2, "unit": "" },
+      { "name": "basil", "quantity": 1, "unit": "bunch" },
+      { "name": "olive oil", "quantity": 3, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Cook the spaghetti in salted water.",
+      "Meanwhile, fry the sliced garlic in the oil, add the halved tomatoes and cook until they collapse.",
+      "Toss the drained pasta through the sauce with the torn basil."
+    ]
+  }
+]
