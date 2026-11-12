@@ -34,7 +34,7 @@ export default function RecipePage({ id }: { id: string }) {
   }
 
   return (
-    <article className={styles.recipe}>
+    <article>
       <AllRecipesLink />
 
       <header className={styles.intro}>
