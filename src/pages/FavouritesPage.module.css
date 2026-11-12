@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: var(--space-5) var(--space-4);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.empty {
+  max-width: var(--measure);
+  margin-top: var(--space-5);
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--line);
+}
+
+.emptyTitle {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.emptyHint {
+  margin: 0 0 var(--space-4);
+  color: var(--muted);
+}
+
+.browse {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--paper);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.browse:hover {
+  background: var(--ink);
+}
