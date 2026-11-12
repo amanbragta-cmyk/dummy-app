@@ -1,0 +1,121 @@
+.back {
+  display: inline-block;
+  margin-bottom: var(--space-4);
+  font-size: var(--text-sm);
+  text-underline-offset: 0.2em;
+}
+
+.missing p {
+  color: var(--muted);
+}
+
+.intro {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+}
+
+.summary h1 {
+  margin-bottom: var(--space-2);
+}
+
+.lede {
+  max-width: 40ch;
+  margin: 0 0 var(--space-3);
+  color: var(--muted);
+  font-size: var(--text-lg);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin: 0 0 var(--space-4);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.body {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.body h2 {
+  font-size: var(--text-xl);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--accent);
+}
+
+.ingredients {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ingredients li {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.amount {
+  font-weight: 600;
+}
+
+.steps {
+  max-width: var(--measure);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+/* Safari drops list semantics with list-style: none, hence role="list" in the markup. Big numbers read at a glance mid-cooking. */
+.steps li {
+  position: relative;
+  min-height: 2.5rem;
+  margin-bottom: var(--space-4);
+  padding-left: 3rem;
+  counter-increment: step;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+  width: 2.5rem;
+  color: var(--accent);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 48rem) {
+  .intro {
+    grid-template-columns: 3fr 2fr;
+    align-items: end;
+    gap: var(--space-5);
+  }
+
+  .body {
+    grid-template-columns: minmax(14rem, 1fr) 2fr;
+    gap: var(--space-6);
+  }
+}
