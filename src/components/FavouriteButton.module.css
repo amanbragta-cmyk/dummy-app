@@ -1,0 +1,43 @@
+/* Sits on a white card or over a photo, so it carries its own white disc. */
+.button {
+  display: inline-grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.button:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.heart {
+  width: 1.375rem;
+  height: 1.375rem;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+  transition: fill 160ms ease, transform 160ms ease;
+}
+
+.button:active .heart {
+  transform: scale(0.82);
+}
+
+.on {
+  color: var(--accent);
+  border-color: var(--accent-soft);
+  background: var(--accent-soft);
+}
+
+.on .heart {
+  fill: currentColor;
+}
