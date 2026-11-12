@@ -43,7 +43,7 @@ Type: story
 - J5 Recipe card: `<RecipeCard recipe={Recipe} />` (src/components/RecipeCard.tsx) links to #/recipe/:id and shows a FavouriteButton; RecipesPage and FavouritesPage both render it.
 
 ## Tasks
-- T1 Scaffold the app and stub every join | 1d | type: task | points: 3 | files: package.json, package-lock.json, index.html, vite.config.ts, tsconfig.json, tsconfig.node.json, vitest.setup.ts, .gitignore, .github/workflows/deploy.yml, docs/joins.md, src/main.tsx, src/App.tsx, src/App.test.tsx, src/index.css, src/types.ts, src/data/recipes.ts, src/data/recipes.json, src/store/, src/components/, src/pages/ | rests on: D1, D2, D3, D5, D6, J1, J2, J3, J4, J5 | check: `npm run build && npm test`
+- T1 Scaffold the app and stub every join | 1d | type: task | points: 3 | files: package.json, package-lock.json, index.html, vite.config.ts, tsconfig.json, tsconfig.node.json, vitest.setup.ts, .gitignore, .github/workflows/deploy.yml, docs/joins.md, src/main.tsx, src/App.tsx, src/App.test.tsx, src/index.css, src/types.ts, src/data/recipes.ts, src/data/recipes.json, src/store/, src/components/, src/pages/ | rests on: D1, D2, D3, D5, D6, J1, J2, J3, J4, J5 | check: `npm ci && npm run build && npm test`
   Lane: aman. Vite + React + TS app with Vitest (jsdom, Testing Library) and `npm test` = `vitest run`; vite base set for GitHub Pages.
   Write docs/joins.md from J1-J5. Create src/types.ts and src/data/recipes.ts exactly as J1 with 3 seed recipes in recipes.json.
   Create every J2-J5 file as a working stub with the agreed signature (pages show their title, buttons render a plain button, stores keep state in memory), so both lanes build against real imports from day one.
@@ -56,7 +56,7 @@ Type: story
   accept: #/list shows the shopping list page
   accept: the header nav moves between the three main pages
   accept: docs/joins.md states J1-J5 as written in this plan
-- T2 Browse and search recipes | 2d | type: story | points: 5 | needs: T1 | files: src/data/recipes.json, public/images/, src/lib/search.ts, src/lib/search.test.ts, src/components/RecipeCard.tsx, src/components/RecipeCard.module.css, src/pages/RecipesPage.tsx, src/pages/RecipesPage.module.css, src/pages/RecipesPage.test.tsx | rests on: J1, J4, J5, D4, D6 | check: `npx vitest run src/lib src/pages/RecipesPage.test.tsx`
+- T2 Browse and search recipes | 2d | type: story | points: 5 | needs: T1 | files: src/data/recipes.json, public/images/, src/lib/search.ts, src/lib/search.test.ts, src/components/RecipeCard.tsx, src/components/RecipeCard.module.css, src/pages/RecipesPage.tsx, src/pages/RecipesPage.module.css, src/pages/RecipesPage.test.tsx | rests on: J1, J4, J5, D4, D6 | check: `npm ci && npx vitest run src/lib src/pages/RecipesPage.test.tsx`
   Lane: aman. At least 12 real recipes with photos. search.ts is a pure function (recipes, query, tags) -> recipes. The card shows the FavouriteButton from J2 without changing it.
   accept: the home page shows every recipe as a card with its photo, title, minutes and tags
   accept: typing in search filters the cards as you type
@@ -68,7 +68,7 @@ Type: story
   accept: tapping a chosen tag chip again removes that tag from the filter
   accept: when nothing matches, the page says "No recipes match" with a button that clears the search and tags
   accept: tapping a card opens that recipe's page
-- T3 Recipe page | 1d | type: story | points: 3 | needs: T1 | files: src/pages/RecipePage.tsx, src/pages/RecipePage.module.css, src/pages/RecipePage.test.tsx | rests on: J1, J2, J3, J4, D4, D6 | check: `npx vitest run src/pages/RecipePage.test.tsx`
+- T3 Recipe page | 1d | type: story | points: 3 | needs: T1 | files: src/pages/RecipePage.tsx, src/pages/RecipePage.module.css, src/pages/RecipePage.test.tsx | rests on: J1, J2, J3, J4, D4, D6 | check: `npm ci && npx vitest run src/pages/RecipePage.test.tsx`
   Lane: aman. Uses FavouriteButton (J2) and AddToListButton (J3) as they are, without changing them.
   accept: a recipe's page shows its photo
   accept: a recipe's page shows its title
@@ -80,7 +80,7 @@ Type: story
   accept: a recipe's page shows the "Add to shopping list" button for that recipe
   accept: an unknown recipe id shows "Recipe not found" with a link back to all recipes
   accept: a "All recipes" link goes back to the home page
-- T4 Favourites | 1d | type: story | points: 3 | needs: T1 | files: src/store/favourites.ts, src/store/favourites.test.ts, src/components/FavouriteButton.tsx, src/components/FavouriteButton.module.css, src/pages/FavouritesPage.tsx, src/pages/FavouritesPage.module.css, src/pages/FavouritesPage.test.tsx | rests on: J1, J2, J5, D1, D4, D6 | check: `npx vitest run src/store/favourites.test.ts src/pages/FavouritesPage.test.tsx`
+- T4 Favourites | 1d | type: story | points: 3 | needs: T1 | files: src/store/favourites.ts, src/store/favourites.test.ts, src/components/FavouriteButton.tsx, src/components/FavouriteButton.module.css, src/pages/FavouritesPage.tsx, src/pages/FavouritesPage.module.css, src/pages/FavouritesPage.test.tsx | rests on: J1, J2, J5, D1, D4, D6 | check: `npm ci && npx vitest run src/store/favourites.test.ts src/pages/FavouritesPage.test.tsx`
   Lane: kamal. Replace the T1 stubs with the real store and screens; keep the J2 signature. FavouritesPage renders RecipeCard (J5) as it is.
   accept: tapping an empty heart favourites the recipe
   accept: tapping a filled heart removes the recipe from favourites
@@ -90,7 +90,7 @@ Type: story
   accept: favourites are still there after a reload
   accept: with no favourites, the page says "No favourites yet" with a link to all recipes
   accept: malformed saved favourites are treated as no favourites without a crash
-- T5 Shopping list | 2d | type: story | points: 5 | needs: T1 | files: src/store/shoppingList.ts, src/store/shoppingList.test.ts, src/components/AddToListButton.tsx, src/components/AddToListButton.module.css, src/pages/ShoppingListPage.tsx, src/pages/ShoppingListPage.module.css, src/pages/ShoppingListPage.test.tsx | rests on: J1, J3, D1, D4, D6 | check: `npx vitest run src/store/shoppingList.test.ts src/pages/ShoppingListPage.test.tsx`
+- T5 Shopping list | 2d | type: story | points: 5 | needs: T1 | files: src/store/shoppingList.ts, src/store/shoppingList.test.ts, src/components/AddToListButton.tsx, src/components/AddToListButton.module.css, src/pages/ShoppingListPage.tsx, src/pages/ShoppingListPage.module.css, src/pages/ShoppingListPage.test.tsx | rests on: J1, J3, D1, D4, D6 | check: `npm ci && npx vitest run src/store/shoppingList.test.ts src/pages/ShoppingListPage.test.tsx`
   Lane: kamal. Replace the T1 stubs; keep the J3 signature. Items with the same key are combined: quantities summed, or kept as "some" when either is null.
   accept: "Add to shopping list" adds every ingredient of the recipe to the list
   accept: once a recipe is on the list its button reads "On your list"
@@ -104,7 +104,7 @@ Type: story
   accept: the list is the same after a reload
   accept: an empty list says "Your list is empty" with a link to all recipes
   accept: a malformed saved list is treated as an empty list without a crash
-- T6 Join it all up and walk every journey | 1d | type: task | points: 2 | needs: T2, T3, T4, T5 | files: src/App.tsx, src/App.test.tsx, src/index.css | rests on: J4, D4 | check: `npm run build && npm test`
+- T6 Join it all up and walk every journey | 1d | type: task | points: 2 | needs: T2, T3, T4, T5 | files: src/App.tsx, src/App.test.tsx, src/index.css | rests on: J4, D4 | check: `npm ci && npm run build && npm test`
   Lane: kamal. Walk J01-J05 in docs/journeys.md at 390, 820 and 1280 wide and fix the seams between lanes. Add the shopping list count to the header nav, and the footer line that says favourites and the list live in this browser.
   accept: every journey J01-J05 walks cleanly at 390, 820 and 1280 wide
   accept: no console errors appear while walking the journeys
