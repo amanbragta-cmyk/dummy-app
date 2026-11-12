@@ -15,7 +15,6 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
         alt=""
         width={PHOTO_WIDTH}
         height={PHOTO_HEIGHT}
-        loading="lazy"
       />
       <div className={styles.heading}>
         <h2 className={styles.title}>
