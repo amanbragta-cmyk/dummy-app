@@ -2,8 +2,5 @@
   "product": "dummy-app",
   "prototype": false,
   "knowledge": "~/one-engine-knowledge/dummy-app",
-  "knowledge_url": "git@github.com-work:amanbragta-cmyk/dummy-app-knowledge.git",
-  "serve": "npm run build && npx vite preview --port 3000 --strictPort",
-  "url": "http://localhost:3000",
-  "serve_seconds": 60
+  "knowledge_url": "git@github.com-work:amanbragta-cmyk/dummy-app-knowledge.git"
 }
