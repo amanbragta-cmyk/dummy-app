@@ -63,7 +63,7 @@ export default function App() {
   return (
     <>
       <header className="site-header">
-        <a className="wordmark" href="#/">
+        <a className="wordmark" href={ROUTES.recipes}>
           Recipe book
         </a>
         <nav aria-label="Main">
