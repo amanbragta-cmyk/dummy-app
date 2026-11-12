@@ -1,5 +1,6 @@
 {
   "product": "dummy-app",
   "prototype": false,
-  "knowledge": "~/one-engine-knowledge/dummy-app"
+  "knowledge": "~/one-engine-knowledge/dummy-app",
+  "knowledge_url": "git@github.com-work:amanbragta-cmyk/dummy-app-knowledge.git"
 }
