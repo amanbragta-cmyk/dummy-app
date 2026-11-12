@@ -65,5 +65,224 @@
       "Meanwhile, fry the sliced garlic in the oil, add the halved tomatoes and cook until they collapse.",
       "Toss the drained pasta through the sauce with the torn basil."
     ]
+  },
+  {
+    "id": "shakshuka",
+    "title": "Shakshuka",
+    "summary": "Eggs gently cooked in a spiced tomato and pepper sauce, eaten straight from the pan.",
+    "image": "images/shakshuka.jpg",
+    "tags": ["vegetarian", "under 30 min", "breakfast"],
+    "minutes": 25,
+    "servings": 2,
+    "ingredients": [
+      { "name": "eggs", "quantity": 4, "unit": "" },
+      { "name": "chopped tomatoes", "quantity": 400, "unit": "g" },
+      { "name": "red pepper", "quantity": 1, "unit": "" },
+      { "name": "onion", "quantity": 1, "unit": "" },
+      { "name": "garlic cloves", "quantity": 2, "unit": "" },
+      { "name": "ground cumin", "quantity": 1, "unit": "tsp" },
+      { "name": "feta", "quantity": 50, "unit": "g" },
+      { "name": "olive oil", "quantity": 1, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Soften the sliced onion and pepper in the oil in a wide pan for 8 minutes.",
+      "Add the garlic and cumin, cook for 1 minute, then pour in the tomatoes and simmer for 5 minutes.",
+      "Make four hollows in the sauce and crack an egg into each.",
+      "Cover and cook for 6 to 8 minutes, until the whites are set.",
+      "Crumble over the feta and serve from the pan."
+    ]
+  },
+  {
+    "id": "mushroom-risotto",
+    "title": "Mushroom risotto",
+    "summary": "A slow-stirred risotto with browned mushrooms, butter and parmesan.",
+    "image": "images/mushroom-risotto.jpg",
+    "tags": ["vegetarian"],
+    "minutes": 40,
+    "servings": 4,
+    "ingredients": [
+      { "name": "risotto rice", "quantity": 300, "unit": "g" },
+      { "name": "chestnut mushrooms", "quantity": 400, "unit": "g" },
+      { "name": "onion", "quantity": 1, "unit": "" },
+      { "name": "garlic cloves", "quantity": 2, "unit": "" },
+      { "name": "vegetable stock", "quantity": 1.2, "unit": "l" },
+      { "name": "parmesan", "quantity": 50, "unit": "g" },
+      { "name": "butter", "quantity": 30, "unit": "g" },
+      { "name": "olive oil", "quantity": 2, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Fry the sliced mushrooms in half the oil until golden, then set them aside.",
+      "Soften the chopped onion and garlic in the rest of the oil.",
+      "Stir in the rice for 1 minute, then add the hot stock a ladle at a time, stirring, for about 20 minutes.",
+      "When the rice is just tender, stir in the mushrooms, butter and grated parmesan.",
+      "Rest for 2 minutes before serving."
+    ]
+  },
+  {
+    "id": "salmon-traybake",
+    "title": "Salmon and broccoli traybake",
+    "summary": "Salmon fillets and broccoli roasted together with lemon and a little soy.",
+    "image": "images/salmon-traybake.jpg",
+    "tags": ["one tray", "under 30 min"],
+    "minutes": 25,
+    "servings": 2,
+    "ingredients": [
+      { "name": "salmon fillets", "quantity": 2, "unit": "" },
+      { "name": "broccoli", "quantity": 1, "unit": "head" },
+      { "name": "lemon", "quantity": 1, "unit": "" },
+      { "name": "soy sauce", "quantity": 1, "unit": "tbsp" },
+      { "name": "olive oil", "quantity": 1, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Heat the oven to 200°C.",
+      "Toss the broccoli florets with the oil on a tray and roast for 8 minutes.",
+      "Push the broccoli aside, add the salmon, drizzle with the soy and squeeze over half the lemon.",
+      "Roast for 12 minutes more and serve with the rest of the lemon in wedges."
+    ]
+  },
+  {
+    "id": "red-lentil-soup",
+    "title": "Red lentil and carrot soup",
+    "summary": "A thick, warming soup that costs little and keeps well for lunches.",
+    "image": "images/red-lentil-soup.jpg",
+    "tags": ["vegetarian", "vegan", "soup"],
+    "minutes": 35,
+    "servings": 4,
+    "ingredients": [
+      { "name": "red lentils", "quantity": 200, "unit": "g" },
+      { "name": "carrots", "quantity": 3, "unit": "" },
+      { "name": "onion", "quantity": 1, "unit": "" },
+      { "name": "garlic cloves", "quantity": 2, "unit": "" },
+      { "name": "vegetable stock", "quantity": 1.2, "unit": "l" },
+      { "name": "ground cumin", "quantity": 1, "unit": "tsp" },
+      { "name": "olive oil", "quantity": 1, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Soften the chopped onion, carrots and garlic in the oil for 5 minutes.",
+      "Stir in the cumin, then add the rinsed lentils and the stock.",
+      "Simmer for 25 minutes, until the lentils have fallen apart.",
+      "Blend until smooth and season to taste."
+    ]
+  },
+  {
+    "id": "chilli-con-carne",
+    "title": "Chilli con carne",
+    "summary": "Beef and beans simmered slowly in a smoky tomato sauce. Even better the next day.",
+    "image": "images/chilli-con-carne.jpg",
+    "tags": ["batch cook"],
+    "minutes": 75,
+    "servings": 6,
+    "ingredients": [
+      { "name": "beef mince", "quantity": 500, "unit": "g" },
+      { "name": "kidney beans, drained", "quantity": 400, "unit": "g" },
+      { "name": "chopped tomatoes", "quantity": 800, "unit": "g" },
+      { "name": "onion", "quantity": 1, "unit": "" },
+      { "name": "red pepper", "quantity": 1, "unit": "" },
+      { "name": "garlic cloves", "quantity": 3, "unit": "" },
+      { "name": "chilli powder", "quantity": 2, "unit": "tsp" },
+      { "name": "ground cumin", "quantity": 1, "unit": "tsp" }
+    ],
+    "steps": [
+      "Brown the mince in a large pan, then lift it out.",
+      "Soften the chopped onion, pepper and garlic in the same pan.",
+      "Stir in the chilli powder and cumin, then return the mince with the tomatoes.",
+      "Simmer gently with the lid ajar for 45 minutes, stirring now and then.",
+      "Add the beans for the last 10 minutes and season to taste."
+    ]
+  },
+  {
+    "id": "pancakes",
+    "title": "Lemon and sugar pancakes",
+    "summary": "Thin pancakes, rolled up with a squeeze of lemon and a sprinkle of sugar.",
+    "image": "images/pancakes.jpg",
+    "tags": ["vegetarian", "under 30 min", "breakfast"],
+    "minutes": 25,
+    "servings": 4,
+    "ingredients": [
+      { "name": "plain flour", "quantity": 100, "unit": "g" },
+      { "name": "eggs", "quantity": 2, "unit": "" },
+      { "name": "milk", "quantity": 300, "unit": "ml" },
+      { "name": "butter", "quantity": 20, "unit": "g" },
+      { "name": "lemon", "quantity": 1, "unit": "" },
+      { "name": "caster sugar", "quantity": 2, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Whisk the flour, eggs and milk into a smooth batter and rest it for 10 minutes.",
+      "Melt a little butter in a frying pan over a medium heat.",
+      "Pour in a thin layer of batter, tilting the pan, and cook for 1 minute on each side.",
+      "Squeeze over lemon, sprinkle with sugar and roll up. Repeat with the rest of the batter."
+    ]
+  },
+  {
+    "id": "greek-salad",
+    "title": "Greek salad",
+    "summary": "Ripe tomatoes, cucumber, olives and a slab of feta. No cooking at all.",
+    "image": "images/greek-salad.jpg",
+    "tags": ["vegetarian", "under 30 min"],
+    "minutes": 10,
+    "servings": 2,
+    "ingredients": [
+      { "name": "tomatoes", "quantity": 4, "unit": "" },
+      { "name": "cucumber", "quantity": 1, "unit": "" },
+      { "name": "red onion", "quantity": 0.5, "unit": "" },
+      { "name": "feta", "quantity": 200, "unit": "g" },
+      { "name": "black olives", "quantity": 80, "unit": "g" },
+      { "name": "dried oregano", "quantity": 1, "unit": "tsp" },
+      { "name": "olive oil", "quantity": 3, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Cut the tomatoes and cucumber into chunks and thinly slice the onion.",
+      "Put them in a bowl with the olives and lay the feta on top.",
+      "Sprinkle with oregano, pour over the oil and season with pepper."
+    ]
+  },
+  {
+    "id": "vegetable-stir-fry",
+    "title": "Vegetable noodle stir fry",
+    "summary": "Noodles tossed in a hot pan with crisp vegetables, ginger and soy.",
+    "image": "images/vegetable-stir-fry.jpg",
+    "tags": ["vegetarian", "vegan", "under 30 min"],
+    "minutes": 15,
+    "servings": 2,
+    "ingredients": [
+      { "name": "egg-free noodles", "quantity": 200, "unit": "g" },
+      { "name": "broccoli", "quantity": 1, "unit": "head" },
+      { "name": "red pepper", "quantity": 1, "unit": "" },
+      { "name": "carrots", "quantity": 2, "unit": "" },
+      { "name": "garlic cloves", "quantity": 2, "unit": "" },
+      { "name": "fresh ginger", "quantity": 1, "unit": "thumb" },
+      { "name": "soy sauce", "quantity": 3, "unit": "tbsp" },
+      { "name": "sesame oil", "quantity": 1, "unit": "tbsp" }
+    ],
+    "steps": [
+      "Cook the noodles, drain them and toss with half the sesame oil.",
+      "Stir fry the broccoli, sliced pepper and carrot ribbons in the rest of the oil over a high heat for 3 minutes.",
+      "Add the grated garlic and ginger and cook for 30 seconds.",
+      "Toss in the noodles and soy sauce until everything is hot."
+    ]
+  },
+  {
+    "id": "banana-bread",
+    "title": "Banana bread",
+    "summary": "A moist loaf for the bananas going brown in the fruit bowl.",
+    "image": "images/banana-bread.jpg",
+    "tags": ["vegetarian", "baking"],
+    "minutes": 70,
+    "servings": 8,
+    "ingredients": [
+      { "name": "ripe bananas", "quantity": 3, "unit": "" },
+      { "name": "plain flour", "quantity": 225, "unit": "g" },
+      { "name": "butter", "quantity": 100, "unit": "g" },
+      { "name": "light brown sugar", "quantity": 125, "unit": "g" },
+      { "name": "eggs", "quantity": 2, "unit": "" },
+      { "name": "baking powder", "quantity": 2, "unit": "tsp" }
+    ],
+    "steps": [
+      "Heat the oven to 180°C and line a 900 g loaf tin.",
+      "Mash the bananas and beat in the melted butter, sugar and eggs.",
+      "Fold in the flour and baking powder until just combined.",
+      "Bake for 55 to 60 minutes, until a skewer comes out clean.",
+      "Cool in the tin for 10 minutes before turning out."
+    ]
   }
 ]
