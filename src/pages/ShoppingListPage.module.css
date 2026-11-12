@@ -1,0 +1,172 @@
+.page {
+  max-width: 40rem;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.heading h1 {
+  margin: 0;
+}
+
+.count {
+  margin: 0;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.list {
+  list-style: none;
+  margin: 0 0 var(--space-5);
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--line);
+}
+
+/* Amounts sit in their own right-aligned column, so a glance down the list reads like a ledger. */
+.label {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto 6.5rem 1fr;
+  align-items: center;
+  column-gap: var(--space-3);
+  min-height: 3.5rem;
+  padding-block: var(--space-2);
+  cursor: pointer;
+}
+
+.tick {
+  appearance: none;
+  display: grid;
+  place-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.tick::after {
+  content: '';
+  width: 0.4rem;
+  height: 0.7rem;
+  margin-top: -0.15rem;
+  border: solid var(--paper);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 120ms ease;
+}
+
+.tick:hover {
+  border-color: var(--accent);
+}
+
+.tick:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.tick:checked::after {
+  transform: rotate(45deg) scale(1);
+}
+
+.amount {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.name {
+  overflow-wrap: anywhere;
+}
+
+.item[data-checked='true'] .amount,
+.item[data-checked='true'] .name {
+  color: var(--muted);
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.remove {
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--muted);
+  font-size: var(--text-lg);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.clear {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clear:hover:not(:disabled) {
+  background: var(--accent-soft);
+}
+
+.clear:disabled {
+  border-color: var(--line);
+  color: var(--muted);
+  cursor: default;
+}
+
+.empty {
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.empty p {
+  margin: 0 0 var(--space-2);
+}
+
+.empty .emptyTitle {
+  color: var(--ink);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.empty a {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-weight: 600;
+}
+
+@media (max-width: 30rem) {
+  .label {
+    grid-template-columns: auto 5rem 1fr;
+    column-gap: var(--space-2);
+  }
+}

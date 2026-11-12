@@ -1,0 +1,21 @@
+.button {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--paper);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+/* Once added it reads as a state, not an action: tapping it adds nothing more. */
+.button:disabled {
+  background: var(--accent-soft);
+  color: var(--accent);
+  cursor: default;
+}
