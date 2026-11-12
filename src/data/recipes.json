@@ -26,13 +26,13 @@
   {
     "id": "lemon-garlic-chicken",
     "title": "Lemon and garlic roast chicken",
-    "summary": "Chicken thighs roasted on a tray with lemon, garlic and potatoes.",
+    "summary": "A flattened whole chicken roasted on a tray over lemon, garlic and potatoes.",
     "image": "images/lemon-garlic-chicken.jpg",
     "tags": ["one tray"],
-    "minutes": 50,
+    "minutes": 60,
     "servings": 4,
     "ingredients": [
-      { "name": "chicken thighs", "quantity": 8, "unit": "" },
+      { "name": "whole chicken, butterflied", "quantity": 1.5, "unit": "kg" },
       { "name": "new potatoes", "quantity": 750, "unit": "g" },
       { "name": "lemon", "quantity": 1, "unit": "" },
       { "name": "garlic cloves", "quantity": 6, "unit": "" },
@@ -42,7 +42,7 @@
       "Heat the oven to 200°C.",
       "Halve the potatoes and toss them on a tray with the oil, garlic and sliced lemon.",
       "Lay the chicken on top, skin up, and season.",
-      "Roast for 45 minutes until the skin is crisp and the potatoes are tender."
+      "Roast for 50 to 55 minutes, until the juices run clear and the potatoes are tender."
     ]
   },
   {
@@ -192,25 +192,26 @@
   },
   {
     "id": "pancakes",
-    "title": "Lemon and sugar pancakes",
-    "summary": "Thin pancakes, rolled up with a squeeze of lemon and a sprinkle of sugar.",
+    "title": "Pancakes with berries",
+    "summary": "A stack of thick, fluffy pancakes topped with fresh berries and a spoonful of cream.",
     "image": "images/pancakes.jpg",
     "tags": ["vegetarian", "under 30 min", "breakfast"],
     "minutes": 25,
     "servings": 4,
     "ingredients": [
-      { "name": "plain flour", "quantity": 100, "unit": "g" },
+      { "name": "plain flour", "quantity": 200, "unit": "g" },
+      { "name": "baking powder", "quantity": 2, "unit": "tsp" },
       { "name": "eggs", "quantity": 2, "unit": "" },
-      { "name": "milk", "quantity": 300, "unit": "ml" },
-      { "name": "butter", "quantity": 20, "unit": "g" },
-      { "name": "lemon", "quantity": 1, "unit": "" },
-      { "name": "caster sugar", "quantity": 2, "unit": "tbsp" }
+      { "name": "milk", "quantity": 250, "unit": "ml" },
+      { "name": "butter", "quantity": 30, "unit": "g" },
+      { "name": "mixed berries", "quantity": 200, "unit": "g" },
+      { "name": "whipped cream", "quantity": null, "unit": "" }
     ],
     "steps": [
-      "Whisk the flour, eggs and milk into a smooth batter and rest it for 10 minutes.",
-      "Melt a little butter in a frying pan over a medium heat.",
-      "Pour in a thin layer of batter, tilting the pan, and cook for 1 minute on each side.",
-      "Squeeze over lemon, sprinkle with sugar and roll up. Repeat with the rest of the batter."
+      "Whisk the flour, baking powder, eggs and milk into a thick batter, then stir in half the melted butter.",
+      "Heat a frying pan over a medium heat and brush it with a little of the remaining butter.",
+      "Drop in ladlefuls of batter and cook for 2 minutes, until bubbles appear, then flip and cook for 1 minute more.",
+      "Stack the pancakes and top with the berries and a spoonful of cream."
     ]
   },
   {
@@ -241,11 +242,11 @@
     "title": "Vegetable noodle stir fry",
     "summary": "Noodles tossed in a hot pan with crisp vegetables, ginger and soy.",
     "image": "images/vegetable-stir-fry.jpg",
-    "tags": ["vegetarian", "vegan", "under 30 min"],
+    "tags": ["vegetarian", "under 30 min"],
     "minutes": 15,
     "servings": 2,
     "ingredients": [
-      { "name": "egg-free noodles", "quantity": 200, "unit": "g" },
+      { "name": "egg noodles", "quantity": 200, "unit": "g" },
       { "name": "broccoli", "quantity": 1, "unit": "head" },
       { "name": "red pepper", "quantity": 1, "unit": "" },
       { "name": "carrots", "quantity": 2, "unit": "" },
