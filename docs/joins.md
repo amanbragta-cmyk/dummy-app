@@ -1,0 +1,11 @@
+# Joins
+
+What passes between the pieces of the recipe book. Both lanes build against these
+exactly; a change goes through `engine plan join <J> "<new text>"` so every task
+resting on it is flagged. Copied from docs/plans/recipe-book.md.
+
+- J1 Recipe data, in src/types.ts and read only through src/data/recipes.ts: `Recipe { id: string (url slug), title: string, summary: string, image: string (path under public/images), tags: string[], minutes: number, servings: number, ingredients: Ingredient[], steps: string[] }`, `Ingredient { name: string, quantity: number | null, unit: string }` ('' unit for "2 eggs"). Functions: `getRecipes(): Recipe[]`, `getRecipe(id: string): Recipe | undefined`.
+- J2 Favourites, in src/store/favourites.ts: `useFavourites(): { ids: string[], isFavourite(id: string): boolean, toggle(id: string): void }`, backed by one module-level store read with useSyncExternalStore so every heart on screen agrees at once; localStorage key recipebook.favourites.v1 holds a JSON string[]. Component `<FavouriteButton recipeId={string} />` (src/components/FavouriteButton.tsx).
+- J3 Shopping list, in src/store/shoppingList.ts: `ShoppingItem { key: string (lowercased name + '|' + lowercased unit), name: string, quantity: number | null, unit: string, checked: boolean, recipeIds: string[] }`; `useShoppingList(): { items: ShoppingItem[], hasRecipe(id: string): boolean, addRecipe(recipe: Recipe): void, toggle(key: string): void, remove(key: string): void, clearChecked(): void }`, same store pattern as J2; localStorage key recipebook.shoppingList.v1 holds a JSON ShoppingItem[]. Component `<AddToListButton recipe={Recipe} />` (src/components/AddToListButton.tsx).
+- J4 Screens, routed in src/App.tsx by hash: `#/` -> default export of src/pages/RecipesPage.tsx (no props), `#/recipe/:id` -> src/pages/RecipePage.tsx `({ id: string })`, `#/favourites` -> src/pages/FavouritesPage.tsx (no props), `#/list` -> src/pages/ShoppingListPage.tsx (no props). Header nav links: Recipes, Favourites, Shopping list.
+- J5 Recipe card: `<RecipeCard recipe={Recipe} />` (src/components/RecipeCard.tsx) links to #/recipe/:id and shows a FavouriteButton; RecipesPage and FavouritesPage both render it.
