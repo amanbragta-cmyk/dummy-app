@@ -1,5 +1,15 @@
-import type { Recipe, ShoppingItem } from '../types';
+import type { Recipe } from '../types';
 import { createStore, useStore } from './createStore';
+
+export interface ShoppingItem {
+  /** Lowercased name + '|' + lowercased unit: items with the same key are one line. */
+  key: string;
+  name: string;
+  quantity: number | null;
+  unit: string;
+  checked: boolean;
+  recipeIds: string[];
+}
 
 // Stub from T1: kept in memory, one line per ingredient. T5 combines repeats and saves it
 // under recipebook.shoppingList.v1.

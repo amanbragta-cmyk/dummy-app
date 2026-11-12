@@ -19,13 +19,3 @@ export interface Recipe {
   ingredients: Ingredient[];
   steps: string[];
 }
-
-export interface ShoppingItem {
-  /** Lowercased name + '|' + lowercased unit: items with the same key are one line. */
-  key: string;
-  name: string;
-  quantity: number | null;
-  unit: string;
-  checked: boolean;
-  recipeIds: string[];
-}

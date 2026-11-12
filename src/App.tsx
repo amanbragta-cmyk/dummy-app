@@ -4,10 +4,12 @@ import RecipePage from './pages/RecipePage';
 import FavouritesPage from './pages/FavouritesPage';
 import ShoppingListPage from './pages/ShoppingListPage';
 
+const ROUTES = { recipes: '#/', favourites: '#/favourites', list: '#/list' };
+
 const NAV = [
-  { href: '#/', label: 'Recipes' },
-  { href: '#/favourites', label: 'Favourites' },
-  { href: '#/list', label: 'Shopping list' },
+  { href: ROUTES.recipes, label: 'Recipes' },
+  { href: ROUTES.favourites, label: 'Favourites' },
+  { href: ROUTES.list, label: 'Shopping list' },
 ];
 
 const RECIPE_ROUTE = /^#\/recipe\/([^/]+)$/;
@@ -18,7 +20,7 @@ function subscribe(onChange: () => void) {
 }
 
 function useHash() {
-  return useSyncExternalStore(subscribe, () => window.location.hash || '#/');
+  return useSyncExternalStore(subscribe, () => window.location.hash || ROUTES.recipes);
 }
 
 // Anyone can type or link any hash: a malformed escape must not take the whole app down.
@@ -33,8 +35,8 @@ function decodeId(raw: string) {
 function Page({ hash }: { hash: string }) {
   const recipe = RECIPE_ROUTE.exec(hash);
   if (recipe) return <RecipePage id={decodeId(recipe[1])} />;
-  if (hash === '#/favourites') return <FavouritesPage />;
-  if (hash === '#/list') return <ShoppingListPage />;
+  if (hash === ROUTES.favourites) return <FavouritesPage />;
+  if (hash === ROUTES.list) return <ShoppingListPage />;
   return <RecipesPage />;
 }
 
