@@ -110,10 +110,38 @@ img {
   border-bottom-color: var(--accent);
 }
 
+.nav-count {
+  display: inline-block;
+  min-width: 1.4em;
+  margin-left: var(--space-2);
+  padding: 0 0.4em;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
 .site-main {
   max-width: var(--page);
   margin: 0 auto;
   padding: var(--space-5) var(--gutter) var(--space-6);
+}
+
+.site-footer {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: var(--space-4) var(--gutter) var(--space-5);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.site-footer p {
+  margin: 0;
 }
 
 @media (min-width: 48rem) {
