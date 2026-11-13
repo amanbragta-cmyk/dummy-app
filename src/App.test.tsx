@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { act, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
@@ -58,8 +58,6 @@ describe('App routes', () => {
     expect(screen.getByRole('link', { name: 'Recipes' })).not.toHaveAttribute('aria-current');
   });
 });
-
-import { beforeEach, vi } from 'vitest';
 
 const LIST_KEY = 'recipebook.shoppingList.v1';
 
